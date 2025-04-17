@@ -21,7 +21,7 @@ if (localStorage.getItem('theme') === 'dark') {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const sections = document.querySelectorAll('.section-2')
+    const sections = document.querySelectorAll('.section-2, .section-3')
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
