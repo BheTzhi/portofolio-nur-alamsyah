@@ -238,7 +238,7 @@ body.dark .section-2 img {
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
     will-change: opacity, transform;
-    pointer-events: none;
+    pointer-events: auto;
 }
 
 .section-3.visible {
