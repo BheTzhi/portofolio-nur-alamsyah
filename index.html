@@ -12,7 +12,7 @@
     <!-- Ikon dan CSS lainnya -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" href="assets/img/icons.png" type="image/png">
-    <title>Portofolio - Nur Alamsyah</title>
+    <title id="titles">Portofolio - Nur Alamsyah</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -20,11 +20,15 @@
 
 <body>
     <div class="topbar">
-        <a href="#" class="title">Portofolio</a>
+        <a href="#" id="title" class="title">Portofolio</a>
         <div class="menu">
-            <a href="#1af0aa"><i class="fas fa-user"></i> Tentang Saya</a>
-            <a href="#1fsd40s"><i class="fas fa-briefcase"></i> Proyek</a>
-            <a href="#1rt45sc"><i class="fas fa-envelope"></i> Kontak</a>
+            <a id="nav_about" href="#1af0aa"><i class="fas fa-user"></i> Tentang Saya</a>
+            <a id="nav_portfolio" href="#1fsd40s"><i class="fas fa-briefcase"></i> Portofolio</a>
+            <a id="nav_contact" href="#1rt45sc"><i class="fas fa-envelope"></i> Kontak</a>
+            <div class="language-switcher">
+                <a id="langEn">EN</a> |
+                <a id="langId">ID</a>
+            </div>
             <button id="darkModeToggle" title="Ubah Mode Gelap">🌓</button>
         </div>
         <div class="hamburger" onclick="toggleMenu()">
@@ -35,17 +39,20 @@
     <div class="section-1" id="1af0aa" data-aos="fade-up">
         <img src="assets/img/foto.jpeg" alt="Foto Nur Alamsyah" data-aos="zoom-in">
         <h1 data-aos="fade-up"><i class="fas fa-code"></i> Nur Alamsyah</h1>
-        <p data-aos="fade-up">
+        <p id="p1" data-aos="fade-up">
             Halo! Nama saya Nur Alamsyah, dan saya adalah seorang Junior Programmer yang antusias dan memiliki minat
-            kuat dalam pengembangan web dan mobile. Saya memiliki pengalaman langsung dengan: <br><br>
-
-            🌐 HTML, CSS, dan JavaScript, termasuk penggunaan dasar jQuery untuk membuat halaman web interaktif.<br><br>
-
+            kuat dalam pengembangan web dan mobile. Saya memiliki pengalaman langsung dengan:</p>
+        <p id="p2" data-aos="fade-up">
+            🌐 HTML, CSS, dan JavaScript, termasuk penggunaan dasar jQuery untuk membuat halaman web interaktif.
+        </p>
+        <p id="p3" data-aos="fade-up">
             💻 Kemampuan menengah dalam PHP dan Kotlin, yang memungkinkan saya membangun layanan backend dan aplikasi
-            Android.<br><br>
-
-            🗃️ Pemahaman yang kuat tentang SQL dan pengalaman menggunakan database MySQL.<br><br>
-
+            Android.
+        </p>
+        <p id="p4" data-aos="fade-up">
+            🗃️ Pemahaman yang kuat tentang SQL dan pengalaman menggunakan database MySQL.
+        </p>
+        <p id="p5" data-aos="fade-up">
             Saya selalu bersemangat untuk mempelajari teknologi baru, membangun proyek yang bermanfaat, dan bekerja sama
             dalam tim pengembangan perangkat lunak. Fokus saya adalah menulis kode yang bersih, efisien, dan mudah
             dirawat.
@@ -55,37 +62,41 @@
     <div class="section-2" id="1fsd40s" data-aos="fade-up">
         <div class="grid-container">
             <div class="left-side">
-                <h2>Proyek 1</h2>
-                <p>Sistem Informasi Manajemen Perusahaan</p>
-                <a href="https://github.com/BheTzhi/SIMP" target="_blank">Lihat Proyek</a>
+                <h2 id="project1_title">Proyek 1</h2>
+                <p id="project1_desc">Sistem Informasi Manajemen Perusahaan</p>
+                <a id="project1_link" href="https://github.com/BheTzhi/SIMP" target="_blank">Lihat Proyek</a>
             </div>
             <div class="right-side">
-                <h2>Proyek 2</h2>
-                <p>Sistem Informasi Satuan Kerja Perangkat Daerah</p>
-                <a href="https://github.com/BheTzhi/SISKPD" target="_blank">Lihat Proyek</a>
+                <h2 id="project2_title">Proyek 2</h2>
+                <p id="project2_desc">Sistem Informasi Satuan Kerja Perangkat Daerah</p>
+                <a id="project2_link" href="https://github.com/BheTzhi/SISKPD" target="_blank">Lihat Proyek</a>
             </div>
         </div>
     </div>
 
     <section class="section-3" id="1rt45sc" data-aos="fade-up">
         <div class="kontak-container">
-            <h2>Kontak Saya</h2>
-            <p>Silakan hubungi saya melalui salah satu platform berikut:</p>
+            <h2 id="contact_title">Kontak Saya</h2>
+            <p id="contact_subtitle">Silakan hubungi saya melalui salah satu platform berikut:</p>
             <ul class="kontak-list">
-                <li><strong>Email:</strong> <a href="mailto:alam.syah44.nas@gmail.com">alam.syah44.nas@gmail.com</a>
+                <li><strong id="contact_email">Email:</strong> <a
+                        href="mailto:alam.syah44.nas@gmail.com">alam.syah44.nas@gmail.com</a>
                 </li>
-                <li><strong>WhatsApp:</strong> <a href="https://wa.me/6281219737013" target="_blank">+62
+                <li><strong id="contact_whatsapp">WhatsApp:</strong> <a href="https://wa.me/6281219737013"
+                        target="_blank">+62
                         812-1973-7013</a></li>
-                <li><strong>Instagram:</strong> <a href="https://www.instagram.com/nuralam.syah/" target="_blank">@nuralam.syah</a>
+                <li><strong id="contact_instagram">Instagram:</strong> <a href="https://instagram.com/username"
+                        target="_blank">@username</a>
                 </li>
-                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nur-alamsyah-7aa38a2a6" target="_blank">Nur Alamsyah</a>
+                <li><strong id="contact_linkedin">LinkedIn:</strong> <a href="https://linkedin.com/in/namakamu"
+                        target="_blank">Nama Kamu</a>
                 </li>
             </ul>
         </div>
     </section>
 
     <div class="footer">
-        <p>&copy; 2025 Nur Alamsyah. Hak cipta dilindungi.</p>
+        <p id="footer">&copy; 2025 Nur Alamsyah. Hak cipta dilindungi.</p>
     </div>
 
     <div id="toast" class="toast-notification"></div>
@@ -94,6 +105,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/aos.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/language.js"></script>
 
 </body>
 
