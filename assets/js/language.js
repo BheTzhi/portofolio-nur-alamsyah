@@ -75,7 +75,6 @@ function loadData(language) {
     document.getElementById('contact_instagram').textContent = langData.contact_instagram
     document.getElementById('contact_linkedin').textContent = langData.contact_linkedin
     document.getElementById('footer').textContent = langData.footer
-
 }
 
 function setLanguageInLocalStorage(language) {
@@ -93,10 +92,9 @@ function loadLanguageFromLocalStorage() {
 
 loadLanguageFromLocalStorage()
 
-document.addEventListener('click', (event) => {
+document.addEventListener('click', event => {
     if (event.target.id === 'langId' || event.target.id === 'langEn') {
         const bahasa = event.target.id.replace('lang', '').toLowerCase()
-        
         setLanguageInLocalStorage(bahasa)
         location.reload()
     }
