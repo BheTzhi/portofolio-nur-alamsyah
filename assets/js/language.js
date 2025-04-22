@@ -96,7 +96,7 @@ loadLanguageFromLocalStorage()
 document.addEventListener('click', (event) => {
     if (event.target.id === 'langId' || event.target.id === 'langEn') {
         const bahasa = event.target.id.replace('lang', '').toLowerCase()
-        loadData(bahasa)
+        
         setLanguageInLocalStorage(bahasa)
         location.reload()
     }
