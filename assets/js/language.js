@@ -15,6 +15,9 @@ const id = {
     "project2_title": "Proyek 2",
     "project2_desc": "Sistem Informasi Satuan Kerja Perangkat Daerah",
     "project2_link": "Lihat Proyek",
+    "project3_title": "Proyek 3",
+    "project3_desc": "Manajemen Kegiatan - CRUD Laravel",
+    "project3_link": "Lihat Proyek",
     "contact_title": "Kontak Saya",
     "contact_subtitle": "Silakan hubungi saya melalui salah satu platform berikut:",
     "contact_email": "Email",
@@ -41,6 +44,9 @@ const en = {
     "project2_title": "Project 2",
     "project2_desc": "Regional Work Unit Information System",
     "project2_link": "View Project",
+    "project3_title": "Project 3",
+    "project3_desc": "Task Management - CRUD Laravel",
+    "project3_link": "View Project",
     "contact_title": "Contact Me",
     "contact_subtitle": "Please reach out to me via one of the following platforms:",
     "contact_email": "Email",
@@ -68,6 +74,9 @@ function loadData(language) {
     document.getElementById('project2_title').textContent = langData.project2_title
     document.getElementById('project2_desc').textContent = langData.project2_desc
     document.getElementById('project2_link').textContent = langData.project2_link
+    document.getElementById('project3_title').textContent = langData.project3_title
+    document.getElementById('project3_desc').textContent = langData.project3_desc
+    document.getElementById('project3_link').textContent = langData.project3_link
     document.getElementById('contact_title').textContent = langData.contact_title
     document.getElementById('contact_subtitle').textContent = langData.contact_subtitle
     document.getElementById('contact_email').textContent = langData.contact_email
